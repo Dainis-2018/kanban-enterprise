@@ -1,0 +1,767 @@
+{
+  "workspaces": [
+    {
+      "id": "ws1",
+      "name": "Acme Corp",
+      "projects": ["p1", "p2", "p3", "p4", "p5", "p6"]
+    },
+    {
+      "id": "ws2",
+      "name": "Personal",
+      "projects": ["p7", "p8"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "name": "Project Alpha",
+      "color": "#4a86e8",
+      "team": "Development Team",
+      "taskCount": 16,
+      "sprintCount": 4,
+      "lastUpdated": "2025-04-10T10:30:00Z",
+      "isFavorite": true,
+      "progress": 75,
+      "description": "Core platform development project",
+      "startDate": "2025-01-15",
+      "endDate": "2025-06-30"
+    },
+    {
+      "id": "p2",
+      "name": "Website Redesign",
+      "color": "#db4437",
+      "team": "Design Team",
+      "taskCount": 24,
+      "sprintCount": 6,
+      "lastUpdated": "2025-04-10T08:15:00Z",
+      "isFavorite": true,
+      "progress": 60,
+      "description": "Complete overhaul of the company website",
+      "startDate": "2025-02-01",
+      "endDate": "2025-07-15"
+    },
+    {
+      "id": "p3",
+      "name": "Mobile App v2.0",
+      "color": "#0f9d58",
+      "team": "Mobile Team",
+      "taskCount": 32,
+      "sprintCount": 8,
+      "lastUpdated": "2025-04-09T14:45:00Z",
+      "isFavorite": false,
+      "progress": 40,
+      "description": "Version 2.0 of our mobile application",
+      "startDate": "2025-03-01",
+      "endDate": "2025-08-31"
+    },
+    {
+      "id": "p4",
+      "name": "Marketing Campaign Q2",
+      "color": "#f4b400",
+      "team": "Marketing Team",
+      "taskCount": 18,
+      "sprintCount": 3,
+      "lastUpdated": "2025-04-07T16:20:00Z",
+      "isFavorite": false,
+      "progress": 10,
+      "description": "Q2 2025 marketing campaign planning and execution",
+      "startDate": "2025-04-01",
+      "endDate": "2025-06-30"
+    },
+    {
+      "id": "p5",
+      "name": "Customer Portal",
+      "color": "#673ab7",
+      "team": "Development Team",
+      "taskCount": 28,
+      "sprintCount": 5,
+      "lastUpdated": "2025-04-09T09:10:00Z",
+      "isFavorite": false,
+      "progress": 55,
+      "description": "Self-service customer portal development",
+      "startDate": "2025-02-15",
+      "endDate": "2025-07-30"
+    },
+    {
+      "id": "p6",
+      "name": "Product Analytics",
+      "color": "#3f51b5",
+      "team": "Data Team",
+      "taskCount": 14,
+      "sprintCount": 3,
+      "lastUpdated": "2025-04-10T05:30:00Z",
+      "isFavorite": false,
+      "progress": 30,
+      "description": "Implementation of product analytics platform",
+      "startDate": "2025-03-15",
+      "endDate": "2025-06-15"
+    },
+    {
+      "id": "p7",
+      "name": "Home Renovation",
+      "color": "#795548",
+      "team": "Personal",
+      "taskCount": 10,
+      "sprintCount": 0,
+      "lastUpdated": "2025-04-08T18:30:00Z",
+      "isFavorite": false,
+      "progress": 15,
+      "description": "Personal home renovation project",
+      "startDate": "2025-05-01",
+      "endDate": "2025-08-31"
+    },
+    {
+      "id": "p8",
+      "name": "Fitness Tracker",
+      "color": "#607d8b",
+      "team": "Personal",
+      "taskCount": 6,
+      "sprintCount": 0,
+      "lastUpdated": "2025-04-09T21:15:00Z",
+      "isFavorite": false,
+      "progress": 20,
+      "description": "Personal fitness tracking app development",
+      "startDate": "2025-04-10",
+      "endDate": "2025-06-10"
+    }
+  ],
+  "teams": [
+    {
+      "id": "t1",
+      "name": "Development Team",
+      "members": ["u1", "u3", "u5", "u7", "u9", "u11"]
+    },
+    {
+      "id": "t2",
+      "name": "Design Team",
+      "members": ["u2", "u6", "u10"]
+    },
+    {
+      "id": "t3",
+      "name": "Mobile Team",
+      "members": ["u1", "u4", "u8", "u12"]
+    },
+    {
+      "id": "t4",
+      "name": "Marketing Team",
+      "members": ["u3", "u7", "u10"]
+    },
+    {
+      "id": "t5",
+      "name": "Data Team",
+      "members": ["u5", "u9", "u11"]
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "name": "John Doe",
+      "avatar": null,
+      "initials": "JD",
+      "email": "john.doe@example.com",
+      "role": "Developer"
+    },
+    {
+      "id": "u2",
+      "name": "Sarah Lee",
+      "avatar": null,
+      "initials": "SL",
+      "email": "sarah.lee@example.com",
+      "role": "Designer"
+    },
+    {
+      "id": "u3",
+      "name": "Mike Peterson",
+      "avatar": null,
+      "initials": "MP",
+      "email": "mike.peterson@example.com",
+      "role": "Project Manager"
+    },
+    {
+      "id": "u4",
+      "name": "Emma Wilson",
+      "avatar": null,
+      "initials": "EW",
+      "email": "emma.wilson@example.com",
+      "role": "Mobile Developer"
+    },
+    {
+      "id": "u5",
+      "name": "David Chen",
+      "avatar": null,
+      "initials": "DC",
+      "email": "david.chen@example.com",
+      "role": "Data Scientist"
+    },
+    {
+      "id": "u6",
+      "name": "Jessica Taylor",
+      "avatar": null,
+      "initials": "JT",
+      "email": "jessica.taylor@example.com",
+      "role": "UI/UX Designer"
+    },
+    {
+      "id": "u7",
+      "name": "Robert Johnson",
+      "avatar": null,
+      "initials": "RJ",
+      "email": "robert.johnson@example.com",
+      "role": "Marketing Specialist"
+    },
+    {
+      "id": "u8",
+      "name": "Lisa Brown",
+      "avatar": null,
+      "initials": "LB",
+      "email": "lisa.brown@example.com",
+      "role": "QA Engineer"
+    },
+    {
+      "id": "u9",
+      "name": "Kevin Patel",
+      "avatar": null,
+      "initials": "KP",
+      "email": "kevin.patel@example.com",
+      "role": "Backend Developer"
+    },
+    {
+      "id": "u10",
+      "name": "Anna Martinez",
+      "avatar": null,
+      "initials": "AM",
+      "email": "anna.martinez@example.com",
+      "role": "Content Strategist"
+    },
+    {
+      "id": "u11",
+      "name": "Thomas Wright",
+      "avatar": null,
+      "initials": "TW",
+      "email": "thomas.wright@example.com",
+      "role": "DevOps Engineer"
+    },
+    {
+      "id": "u12",
+      "name": "Olivia Garcia",
+      "avatar": null,
+      "initials": "OG",
+      "email": "olivia.garcia@example.com",
+      "role": "Frontend Developer"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "projectId": "p1",
+      "epicId": "e1",
+      "title": "User Authentication",
+      "description": "Implement user authentication using JWT tokens",
+      "status": "todo",
+      "priority": "P1",
+      "type": "Frontend Task",
+      "assignees": ["u1"],
+      "tags": ["frontend", "security"],
+      "createdAt": "2025-04-01T09:00:00Z",
+      "updatedAt": "2025-04-01T09:00:00Z",
+      "dueDate": "2025-01-20T23:59:59Z",
+      "comments": [
+        {
+          "id": "c1",
+          "userId": "u3",
+          "text": "Make sure to implement MFA as well",
+          "createdAt": "2025-04-02T10:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "projectId": "p1",
+      "epicId": "e3",
+      "title": "Data Migration",
+      "description": "Migrate legacy data to the new database schema",
+      "status": "todo",
+      "priority": "P2",
+      "type": "Backend Task",
+      "assignees": ["u9"],
+      "tags": ["backend", "database"],
+      "createdAt": "2025-04-02T11:00:00Z",
+      "updatedAt": "2025-04-02T11:00:00Z",
+      "dueDate": "2025-01-25T23:59:59Z",
+      "comments": []
+    },
+    {
+      "id": "t3",
+      "projectId": "p1",
+      "epicId": "e4",
+      "title": "API Documentation",
+      "description": "Create comprehensive API documentation using Swagger",
+      "status": "todo",
+      "priority": "P3",
+      "type": "Documentation",
+      "assignees": ["u1", "u9"],
+      "tags": ["documentation", "api"],
+      "createdAt": "2025-04-03T14:30:00Z",
+      "updatedAt": "2025-04-03T14:30:00Z",
+      "dueDate": "2025-03-05T23:59:59Z",
+      "comments": []
+    },
+    {
+      "id": "t4",
+      "projectId": "p1",
+      "epicId": "e3",
+      "title": "Error Handling",
+      "description": "Implement global error handling and logging",
+      "status": "todo",
+      "priority": "P2",
+      "type": "Backend Task",
+      "assignees": ["u9"],
+      "tags": ["backend", "error handling"],
+      "createdAt": "2025-04-04T09:45:00Z",
+      "updatedAt": "2025-04-04T09:45:00Z",
+      "dueDate": "2025-02-05T23:59:59Z",
+      "comments": []
+    },
+    {
+      "id": "t5",
+      "projectId": "p1",
+      "epicId": "e4",
+      "title": "User Profile Component",
+      "description": "Create reusable user profile component with avatar upload",
+      "status": "in_progress",
+      "priority": "P2",
+      "type": "Frontend Task",
+      "assignees": ["u12"],
+      "tags": ["frontend", "component"],
+      "createdAt": "2025-03-28T11:15:00Z",
+      "updatedAt": "2025-04-05T13:20:00Z",
+      "dueDate": "2025-02-08T23:59:59Z",
+      "comments": [
+        {
+          "id": "c2",
+          "userId": "u2",
+          "text": "Please follow the design system guidelines",
+          "createdAt": "2025-03-30T09:40:00Z"
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "projectId": "p1",
+      "epicId": "e3",
+      "title": "Performance Optimization",
+      "description": "Optimize database queries for better performance",
+      "status": "in_progress",
+      "priority": "P1",
+      "type": "Backend Task",
+      "assignees": ["u5", "u9"],
+      "tags": ["backend", "performance"],
+      "createdAt": "2025-03-25T16:00:00Z",
+      "updatedAt": "2025-04-06T10:30:00Z",
+      "dueDate": "2025-02-10T23:59:59Z",
+      "comments": []
+    },
+    {
+      "id": "t7",
+      "projectId": "p1",
+      "epicId": "e4",
+      "title": "CI/CD Pipeline",
+      "description": "Set up continuous integration and deployment pipeline",
+      "status": "in_progress",
+      "priority": "P1",
+      "type": "DevOps Task",
+      "assignees": ["u11"],
+      "tags": ["devops", "automation"],
+      "createdAt": "2025-03-27T13:45:00Z",
+      "updatedAt": "2025-04-08T11:20:00Z",
+      "dueDate": "2025-03-01T23:59:59Z",
+      "comments": []
+    },
+    {
+      "id": "t8",
+      "projectId": "p1",
+      "epicId": "e4",
+      "title": "Unit Tests",
+      "description": "Write unit tests for core functionality",
+      "status": "in_progress",
+      "priority": "P2",
+      "type": "Testing",
+      "assignees": ["u1", "u8"],
+      "tags": ["testing", "quality"],
+      "createdAt": "2025-03-30T09:30:00Z",
+      "updatedAt": "2025-04-07T14:15:00Z",
+      "dueDate": "2025-02-20T23:59:59Z",
+      "comments": []
+    },
+    {
+      "id": "t9",
+      "projectId": "p1",
+      "epicId": "e1",
+      "title": "Login Page Redesign",
+      "description": "Implement new login page design according to mockups",
+      "status": "review",
+      "priority": "P2",
+      "type": "Frontend Task",
+      "assignees": ["u12", "u2"],
+      "tags": ["frontend", "ui"],
+      "createdAt": "2025-03-20T10:00:00Z",
+      "updatedAt": "2025-04-09T16:45:00Z",
+      "dueDate": "2025-02-01T23:59:59Z",
+      "comments": [
+        {
+          "id": "c3",
+          "userId": "u3",
+          "text": "Looks good! Just a few minor tweaks needed.",
+          "createdAt": "2025-04-09T17:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "t10",
+      "projectId": "p1",
+      "epicId": "e4",
+      "title": "Admin Dashboard",
+      "description": "Create admin dashboard with user management",
+      "status": "review",
+      "priority": "P1",
+      "type": "Frontend Task",
+      "assignees": ["u1", "u12"],
+      "tags": ["frontend", "admin"],
+      "createdAt": "2025-03-15T11:30:00Z",
+      "updatedAt": "2025-04-08T15:20:00Z",
+      "dueDate": "2025-02-15T23:59:59Z",
+      "comments": []
+    },
+    {
+      "id": "t11",
+      "projectId": "p1",
+      "epicId": "e1",
+      "title": "Email Notification Service",
+      "description": "Implement service for sending email notifications",
+      "status": "done",
+      "priority": "P2",
+      "type": "Backend Task",
+      "assignees": ["u9"],
+      "tags": ["backend", "notifications"],
+      "createdAt": "2025-03-10T13:15:00Z",
+      "updatedAt": "2025-04-05T09:30:00Z",
+      "dueDate": "2025-01-25T23:59:59Z",
+      "comments": [
+        {
+          "id": "c4",
+          "userId": "u3",
+          "text": "Excellent work! All tests are passing.",
+          "createdAt": "2025-04-05T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "t12",
+      "projectId": "p1",
+      "epicId": "e1",
+      "title": "User Onboarding Flow",
+      "description": "Design and implement improved user onboarding flow",
+      "status": "done",
+      "priority": "P1",
+      "type": "UX Task",
+      "assignees": ["u2", "u12"],
+      "tags": ["ux", "onboarding"],
+      "createdAt": "2025-03-05T10:45:00Z",
+      "updatedAt": "2025-04-03T11:20:00Z",
+      "dueDate": "2025-02-05T23:59:59Z",
+      "comments": []
+    },
+    {
+      "id": "t13",
+      "projectId": "p1",
+      "epicId": "e2",
+      "title": "Search Functionality",
+      "description": "Implement global search with filtering options",
+      "status": "done",
+      "priority": "P2",
+      "type": "Full Stack Task",
+      "assignees": ["u1", "u9"],
+      "tags": ["frontend", "backend", "search"],
+      "createdAt": "2025-03-01T09:00:00Z",
+      "updatedAt": "2025-03-25T14:30:00Z",
+      "dueDate": "2025-02-18T23:59:59Z",
+      "comments": []
+    },
+    {
+      "id": "t14",
+      "projectId": "p1",
+      "epicId": "e4",
+      "title": "Responsive Design",
+      "description": "Ensure all components are responsive on mobile devices",
+      "status": "done",
+      "priority": "P1",
+      "type": "Frontend Task",
+      "assignees": ["u12", "u2"],
+      "tags": ["frontend", "responsive"],
+      "createdAt": "2025-02-25T11:30:00Z",
+      "updatedAt": "2025-03-20T10:15:00Z",
+      "dueDate": "2025-02-08T23:59:59Z",
+      "comments": []
+    }
+  ],
+  "columns": [
+    {
+      "id": "todo",
+      "title": "To Do",
+      "order": 1,
+      "limit": 10 
+    },
+    {
+      "id": "in_progress",
+      "title": "In Progress",
+      "order": 2,
+      "limit": 5
+    },
+    {
+      "id": "review",
+      "title": "Review",
+      "order": 3,
+      "limit": 5
+    },
+    {
+      "id": "done",
+      "title": "Done",
+      "order": 4,
+      "limit": 0
+    }
+  ],
+  "tags": [
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "color": "#e8f0fe",
+      "borderColor": "#c8d9f3"
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "color": "#e6f4ea",
+      "borderColor": "#c8e6c9"
+    },
+    {
+      "id": "bug",
+      "name": "Bug",
+      "color": "#fce8e6",
+      "borderColor": "#f3c8c8"
+    },
+    {
+      "id": "feature",
+      "name": "Feature",
+      "color": "#fef8e1",
+      "borderColor": "#f9e0a3"
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "color": "#ffebee",
+      "borderColor": "#ffcdd2"
+    },
+    {
+      "id": "documentation",
+      "name": "Documentation",
+      "color": "#e0f7fa",
+      "borderColor": "#b2ebf2"
+    },
+    {
+      "id": "performance",
+      "name": "Performance",
+      "color": "#f3e5f5",
+      "borderColor": "#e1bee7"
+    },
+    {
+      "id": "ui",
+      "name": "UI",
+      "color": "#fff8e1",
+      "borderColor": "#ffecb3"
+    },
+    {
+      "id": "ux",
+      "name": "UX",
+      "color": "#fffde7",
+      "borderColor": "#fff9c4"
+    },
+    {
+      "id": "api",
+      "name": "API",
+      "color": "#e8eaf6",
+      "borderColor": "#c5cae9"
+    },
+    {
+      "id": "testing",
+      "name": "Testing",
+      "color": "#e0f2f1",
+      "borderColor": "#b2dfdb"
+    },
+    {
+      "id": "devops",
+      "name": "DevOps",
+      "color": "#f9fbe7",
+      "borderColor": "#f0f4c3"
+    },
+    {
+      "id": "database",
+      "name": "Database",
+      "color": "#efebe9",
+      "borderColor": "#d7ccc8"
+    },
+    {
+      "id": "search",
+      "name": "Search",
+      "color": "#fce4ec",
+      "borderColor": "#f8bbd0"
+    },
+    {
+      "id": "responsive",
+      "name": "Responsive",
+      "color": "#e3f2fd",
+      "borderColor": "#bbdefb"
+    },
+    {
+      "id": "component",
+      "name": "Component",
+      "color": "#f1f8e9",
+      "borderColor": "#dcedc8"
+    },
+    {
+      "id": "admin",
+      "name": "Admin",
+      "color": "#e8f5e9",
+      "borderColor": "#c8e6c9"
+    },
+    {
+      "id": "notifications",
+      "name": "Notifications",
+      "color": "#fff3e0",
+      "borderColor": "#ffe0b2"
+    },
+    {
+      "id": "onboarding",
+      "name": "Onboarding",
+      "color": "#f3e5f5",
+      "borderColor": "#e1bee7"
+    },
+    {
+      "id": "quality",
+      "name": "Quality",
+      "color": "#e1f5fe",
+      "borderColor": "#b3e5fc"
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "color": "#ede7f6",
+      "borderColor": "#d1c4e9"
+    },
+    {
+      "id": "error handling",
+      "name": "Error Handling",
+      "color": "#ffebee",
+      "borderColor": "#ffcdd2"
+    }
+  ],
+  "sprints": [
+  {
+    "id": "s1",
+    "projectId": "p1",
+    "name": "Sprint 1",
+    "startDate": "2025-01-15",
+    "endDate": "2025-01-28",
+    "goal": "Setup core infrastructure and authentication",
+    "status": "completed",
+    "milestone": "MVP"
+  },
+  {
+    "id": "s2",
+    "projectId": "p1",
+    "name": "Sprint 2",
+    "startDate": "2025-01-29",
+    "endDate": "2025-02-11",
+    "goal": "Implement user management and basic UI",
+    "status": "completed",
+    "milestone": null
+  },
+  {
+    "id": "s3",
+    "projectId": "p1",
+    "name": "Sprint 3",
+    "startDate": "2025-02-12",
+    "endDate": "2025-02-25",
+    "goal": "Implement core application features",
+    "status": "active",
+    "milestone": "Beta Release"
+  },
+  {
+    "id": "s4",
+    "projectId": "p1",
+    "name": "Sprint 4",
+    "startDate": "2025-02-26",
+    "endDate": "2025-03-11",
+    "goal": "Polish UI and address feedback",
+    "status": "planned",
+    "milestone": "v1.0"
+  },
+  {
+    "id": "s5",
+    "projectId": "p1",
+    "name": "Sprint 5",
+    "startDate": "2025-03-12",
+    "endDate": "2025-03-25",
+    "goal": "Performance optimizations and bug fixes",
+    "status": "planned",
+    "milestone": null
+  },
+  {
+    "id": "s6",
+    "projectId": "p1",
+    "name": "Sprint 6",
+    "startDate": "2025-03-26",
+    "endDate": "2025-04-08",
+    "goal": "Additional features and enhancements",
+    "status": "planned",
+    "milestone": null
+  }
+],
+"epics": [
+  {
+    "id": "e1",
+    "projectId": "p1",
+    "name": "User Authentication",
+    "description": "All features related to user authentication and authorization",
+    "startDate": "2025-01-15",
+    "endDate": "2025-02-25",
+    "progress": 80
+  },
+  {
+    "id": "e2",
+    "projectId": "p1",
+    "name": "Payment Processing",
+    "description": "Payment gateway integration and billing features",
+    "startDate": "2025-02-12",
+    "endDate": "2025-03-25",
+    "progress": 30
+  },
+  {
+    "id": "e3",
+    "projectId": "p1",
+    "name": "Data Management",
+    "description": "Data schema design and migration tools",
+    "startDate": "2025-01-15",
+    "endDate": "2025-02-25",
+    "progress": 75
+  },
+  {
+    "id": "e4",
+    "projectId": "p1",
+    "name": "UI/UX",
+    "description": "Dashboard and user settings interfaces",
+    "startDate": "2025-01-29",
+    "endDate": "2025-04-08",
+    "progress": 45
+  }
+]
+}

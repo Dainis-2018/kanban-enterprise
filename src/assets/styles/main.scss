@@ -1,0 +1,85 @@
+// Import variables
+@import './_variables.scss';
+
+// Global styles
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: $text-primary;
+  background-color: $bg-light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// Utility classes
+.gap-1 {
+  gap: $spacing-xs;
+}
+
+.gap-2 {
+  gap: $spacing-sm;
+}
+
+.gap-3 {
+  gap: $spacing-md;
+}
+
+.gap-4 {
+  gap: $spacing-lg;
+}
+
+// Hide scrollbar but allow scrolling
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+}
+
+// Truncate text with ellipsis
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Card hover effect
+.hover-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-medium;
+  }
+}
+
+// Responsive containers
+.container-sm {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.container-md {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.container-lg {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.container-xl {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}

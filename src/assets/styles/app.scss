@@ -1,0 +1,32 @@
+/* App-specific styles to fix layout issues */
+
+/* Override Vuetify's default padding to work with our sidebar */
+.v-application {
+    .v-main {
+      transition: padding-left 0.3s ease !important;
+    }
+  }
+  
+  /* Fix for content shifting */
+  .v-navigation-drawer--rail ~ .v-main {
+    padding-left: 64px !important;
+  }
+  
+  .v-navigation-drawer--expand-on-hover:not(.v-navigation-drawer--rail) ~ .v-main {
+    padding-left: 240px !important;
+  }
+  
+  /* Fix for weird content jumping when toggling sidebar */
+  .v-navigation-drawer.v-navigation-drawer--fixed {
+    z-index: 100;
+  }
+  
+  /* Ensure layout transitions are smooth */
+  .layout-container {
+    position: relative;
+  }
+  
+  /* Fix for Vuetify's default padding */
+  .v-container {
+    max-width: 100% !important;
+  }

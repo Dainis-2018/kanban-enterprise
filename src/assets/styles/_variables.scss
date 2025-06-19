@@ -1,0 +1,45 @@
+// Colors
+$primary: #4a86e8;
+$secondary: #673ab7;
+$accent: #f4b400;
+$error: #db4437;
+$success: #0f9d58;
+$warning: #f4b400;
+$info: #3f51b5;
+
+// Background colors
+$bg-light: #f9f9f9;
+$bg-white: #ffffff;
+$bg-sidebar: #e6e6e6;
+
+// Text colors
+$text-primary: rgba(0, 0, 0, 0.87);
+$text-secondary: rgba(0, 0, 0, 0.6);
+$text-disabled: rgba(0, 0, 0, 0.38);
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+
+// Box shadows
+$shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+$shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-heavy: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+// Z-index levels
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;

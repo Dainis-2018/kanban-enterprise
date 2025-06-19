@@ -1,0 +1,87 @@
+// Global sidebar styles and behaviors
+
+// Custom transition for sidebar
+.v-navigation-drawer {
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+  
+  // Animation for icon-only view
+  .icon-only {
+    .v-icon {
+      transition: transform 0.2s ease;
+    }
+    
+    &:hover .v-icon {
+      transform: scale(1.2);
+    }
+  }
+  
+  // For when the body has these classes
+  body.sidebar-expanded {
+    .v-main {
+      padding-left: 240px !important;
+    }
+  }
+  
+  body.sidebar-collapsed {
+    .v-main {
+      padding-left: 64px !important;
+    }
+  }
+  
+  // Mobile adjustments
+  @media (max-width: 600px) {
+    body.sidebar-expanded .v-main,
+    body.sidebar-collapsed .v-main {
+      padding-left: 0 !important;
+    }
+    
+    .v-navigation-drawer {
+      transform: translateX(0) !important;
+    }
+  }
+  
+  // Override Vuetify styles for navigation drawer content
+  .v-navigation-drawer__content {
+    overflow-y: auto;
+  }
+  
+// Fixes for navigation drawer items when collapsed
+.sidebar-collapsed {
+
+  // Target ONLY list items INSIDE the navigation drawer
+  .v-navigation-drawer { // <-- Add this parent selector (or a more specific class/ID if your sidebar has one)
+
+    .sidebar-section-title {
+      display: none;
+    }
+
+    .v-list-item__content {
+      display: none; // Now only affects content within the drawer
+    }
+
+    .v-list-item {
+      justify-content: center;
+      padding: 0 4px; // Now only affects items within the drawer
+    }
+
+    .v-list-item__prepend {
+      margin-right: 0 !important;
+      margin-inline-end: 0 !important;
+      justify-content: center !important; // Now only affects prepends within the drawer
+    }
+
+    // Center all list items when sidebar is collapsed
+    .v-list-item {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      width: 40px !important; // Now only affects items within the drawer
+      min-width: 40px !important;
+      max-width: 40px !important;
+
+      .v-list-item__prepend {
+        min-width: unset !important; // Now only affects prepends within the drawer
+      }
+    }
+  } // <-- End of added parent selector scope
+}

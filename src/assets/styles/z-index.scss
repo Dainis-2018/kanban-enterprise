@@ -1,0 +1,61 @@
+// Global z-index management to ensure consistent stacking order
+:root {
+    --z-index-tabs: 1000;
+    --z-index-top-bar: 900;
+    --z-index-navigation: 800;
+    --z-index-sidebar: 700;
+    --z-index-content: 100;
+    --z-index-modal: 2000;
+    --z-index-dropdown: 1500;
+  }
+  
+  // Ensure project tabs always appear above the top bar
+  .v-tabs {
+    position: relative !important;
+    z-index: var(--z-index-tabs) !important;
+  }
+  
+  // Force all tab elements to have the same high z-index
+  .v-tab,
+  .v-tabs__wrapper,
+  .v-tabs-bar,
+  .v-tabs__div,
+  .v-tabs__container {
+    position: relative !important;
+    z-index: var(--z-index-tabs) !important;
+  }
+  
+  // TopBar should be below tabs but above most content
+  .v-app-bar,
+  .top-bar {
+    position: relative !important;
+    z-index: var(--z-index-top-bar) !important;
+  }
+  
+  // Project navigation elements
+  .project-navigation,
+  .project-tabs,
+  .tab-container {
+    position: relative !important;
+    z-index: var(--z-index-tabs) !important;
+  }
+  
+  // Sidebar should be below the topbar but above content
+  .v-navigation-drawer,
+  .sidebar {
+    z-index: var(--z-index-sidebar) !important;
+  }
+  
+  // Main content should be at the bottom of the stack
+  .main-content,
+  .layout-container {
+    z-index: var(--z-index-content) !important;
+  }
+  
+  // Ensure dialogs and dropdowns always appear at the top
+  .v-menu__content,
+  .v-dialog__content {
+    z-index: var(--z-index-modal) !important;
+  }
+  
+  // Use !important flags to override Vuetify's default z-indices

@@ -1,0 +1,60 @@
+/* Global CSS fixes to ensure tabs are always on top */
+
+/* Make sure tabs appear above the topbar */
+.v-tabs,
+.v-tab,
+.project-tabs,
+.tab-container {
+  position: relative !important;
+  z-index: 1000 !important;
+}
+
+/* Topbar should be below tabs */
+.v-app-bar,
+.top-bar {
+  position: relative !important;
+  z-index: 900 !important;
+}
+
+/* Fix issue with Vuetify's default z-index values */
+.v-layout {
+  z-index: auto !important;
+}
+
+/* Fix for Vuetify's overlays */
+.v-overlay__content {
+  z-index: 1500 !important;
+}
+
+/* Fix for navigation drawer */
+.v-navigation-drawer {
+  z-index: 950 !important;
+}
+
+/* Increase specificity to override Vuetify's styles */
+.v-tabs.v-tabs.v-tabs.v-tabs {
+  z-index: 1000 !important;
+  position: relative !important;
+}
+
+/* Override inline styles that might be applied by Vuetify */
+.v-application [class*="top-bar"],
+.v-application [class*="app-bar"] {
+  z-index: 900 !important;
+}
+
+/* Make sure tab-related elements are accessible */
+.v-tab__wrapper,
+.v-tabs-bar,
+.v-tabs-slider-wrapper,
+.v-tabs__div,
+.v-tabs-items {
+  z-index: 1000 !important;
+  position: relative !important;
+}
+
+/* Fix overflow issues */
+.v-application__wrap,
+.v-main {
+  overflow: visible !important;
+}
