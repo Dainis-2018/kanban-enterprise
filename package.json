@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.ts --fix",
+    "test": "vitest",
+    "test:e2e": "cypress run",
+    "audit": "npm audit",
+    "audit:fix": "npm audit fix"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
@@ -25,7 +30,14 @@
     "vue-i18n": "^11.1.3",
     "vue-router": "^4.5.0",
     "vuedraggable": "^4.1.0",
-    "vuetify": "^3.8.0-beta.0"
+    "vuetify": "^3.8.0-beta.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "vitest": "^1.0.0",
+    "cypress": "^13.0.0",
+    "typescript": "^5.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
